@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const tutSchema = new mongoose.Schema({
+const feedbackSchema = new mongoose.Schema({
     name: { type: String, required: true },
     flatNumber: { type: String, required: true },
     email: { type: String, required: true },
@@ -15,5 +15,5 @@ const tutSchema = new mongoose.Schema({
     recommendationComments: { type: String }
 });
 
-const Feedback = mongoose.model('Feedback', tutSchema);
+const Feedback = mongoose.model('Feedback', feedbackSchema);
 module.exports = Feedback;

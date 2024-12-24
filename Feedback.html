@@ -9,181 +9,183 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #2c3e50;
-    transition: background-color 0.5s ease, color 0.5s ease;
-}
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            /*background-color: #f4f4f9; */
+            background-color: #a7a7f9;
+            color: #2c3e50;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
 
-form {
-    background-color: #ffffff;
-    padding: 30px;
-    margin: 50px auto;
-    max-width: 700px;
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(44, 62, 80, 0.15);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            margin: 50px auto;
+            max-width: 700px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(44, 62, 80, 0.15);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
 
-form:hover {
-    box-shadow: 0 12px 40px rgba(44, 62, 80, 0.25);
-    transform: translateY(-5px);
-}
+        form:hover {
+            box-shadow: 0 12px 40px rgba(44, 62, 80, 0.25);
+            transform: translateY(-5px);
+        }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #2980b9;
-    animation: fadeSlideIn 1s ease-out;
-}
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2980b9;
+            animation: fadeSlideIn 1s ease-out;
+        }
 
-@keyframes fadeSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
+        @keyframes fadeSlideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #34495e;
-    transition: color 0.3s ease;
-}
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #34495e;
+            transition: color 0.3s ease;
+        }
 
-label:hover {
-    color: #2c3e50;
-}
+        label:hover {
+            color: #2c3e50;
+        }
 
-input[type="text"],
-input[type="email"],
-input[type="date"],
-textarea {
-    width: 95%;
-    padding: 14px;
-    margin: 8px 0 20px;
-    border: 1px solid #dcdfe6;
-    border-radius: 10px;
-    background-color: #ecf0f1;
-    color: #2c3e50;
-    font-size: 16px;
-    transition: all 0.3s ease-in-out;
-}
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea {
+            width: 95%;
+            padding: 14px;
+            margin: 8px 0 20px;
+            border: 1px solid #dcdfe6;
+            border-radius: 10px;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            font-size: 16px;
+            transition: all 0.3s ease-in-out;
+        }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="date"]:focus,
-textarea:focus {
-    border-color: #3498db;
-    background-color: #eaf2f8;
-    box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
-    outline: none;
-}
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        textarea:focus {
+            border-color: #3498db;
+            background-color: #eaf2f8;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+            outline: none;
+        }
 
-textarea {
-    height: 140px;
-    resize: none;
-}
+        textarea {
+            height: 140px;
+            resize: none;
+        }
 
-.rating-options {
-    display: flex;
-    flex-direction: column;
-}
+        .rating-options {
+            display: flex;
+            flex-direction: column;
+        }
 
-.rating-options label {
-    margin-left: 12px;
-    display: inline;
-    font-weight: normal;
-    color: #7f8c8d;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
+        .rating-options label {
+            margin-left: 12px;
+            display: inline;
+            font-weight: normal;
+            color: #7f8c8d;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
 
-.rating-options input[type="radio"] {
-    margin-right: 10px;
-    cursor: pointer;
-}
+        .rating-options input[type="radio"] {
+            margin-right: 10px;
+            cursor: pointer;
+        }
 
-.rating-options input[type="radio"]:checked+label {
-    color: #3498db;
-    transform: scale(1.1);
-}
+        .rating-options input[type="radio"]:checked+label {
+            color: #3498db;
+            transform: scale(1.1);
+        }
 
-.rating-options div {
-    margin-bottom: 18px;
-}
+        .rating-options div {
+            margin-bottom: 18px;
+        }
 
-hr {
-    border: 0;
-    border-top: 1px solid #bdc3c7;
-    margin: 30px 0;
-}
+        hr {
+            border: 0;
+            border-top: 1px solid #bdc3c7;
+            margin: 30px 0;
+        }
 
-.submit-section {
-    text-align: center;
-    margin-top: 30px;
-}
+        .submit-section {
+            text-align: center;
+            margin-top: 30px;
+        }
 
-input[type="submit"] {
-    padding: 12px 24px;
-    background-color: #3498db;
-    border: none;
-    color: #ffffff;
-    font-size: 18px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-weight: 500;
-}
+        input[type="submit"] {
+            padding: 12px 24px;
+            background-color: #3498db;
+            border: none;
+            color: #ffffff;
+            font-size: 18px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 500;
+        }
 
-input[type="submit"]:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
-}
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
 
-.image-upload {
-    margin-top: 20px;
-    text-align: center;
-}
+        .image-upload {
+            margin-top: 20px;
+            text-align: center;
+        }
 
-.image-upload input[type="file"] {
-    padding: 12px;
-    border: 1px solid #dcdfe6;
-    border-radius: 10px;
-    background-color: #ecf0f1;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-    cursor: pointer;
-}
+        .image-upload input[type="file"] {
+            padding: 12px;
+            border: 1px solid #dcdfe6;
+            border-radius: 10px;
+            background-color: #ecf0f1;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+        }
 
-.image-upload input[type="file"]:hover {
-    background-color: #e8ecef;
-    border-color: #bdc3c7;
-}
+        .image-upload input[type="file"]:hover {
+            background-color: #e8ecef;
+            border-color: #bdc3c7;
+        }
 
-.section-title {
-    font-size: 1.3em;
-    margin-top: 20px;
-    color: #2980b9;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    animation: fadeIn 1s ease-out;
-}
+        .section-title {
+            font-size: 1.3em;
+            margin-top: 20px;
+            color: #2980b9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: fadeIn 1s ease-out;
+        }
 
-.rating-options div {
-    margin-bottom: 18px;
-}
+        .rating-options div {
+            margin-bottom: 18px;
+        }
     </style>
 </head>
+
 <body>
     <form action="/submit" method="post" enctype="multipart/form-data">
-        <h1>Flat Feedback Form</h1>
+        <h1>Residential Feedback Form</h1>
 
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -277,32 +279,27 @@ input[type="submit"]:hover {
         <h2>Electric Supply</h2>
         <label>1. How would you rate the electric supply in your flat?</label>
         <div class="rating-options">
-            <div><input type="radio" name="electricSupplyRating" value="Excellent" required><label
-                    for="Excellent">Excellent</label></div>
+            <div><input type="radio" name="electricSupplyRating" value="Excellent" required><label for="Excellent">Excellent</label></div>
             <div><input type="radio" name="electricSupplyRating" value="Good"><label for="Good">Good</label></div>
             <div><input type="radio" name="electricSupplyRating" value="Fair"><label for="Fair">Fair</label></div>
             <div><input type="radio" name="electricSupplyRating" value="Poor"><label for="Poor">Poor</label></div>
-            <div><input type="radio" name="electricSupplyRating" value="Very Poor"><label for="Very Poor">Very
-                    Poor</label></div>
+            <div><input type="radio" name="electricSupplyRating" value="Very Poor"><label for="Very Poor">Very Poor</label></div>
         </div>
 
         <label>2. Have you experienced any power outages in the last month?</label>
         <div class="rating-options">
-            <div><input type="radio" name="powerOutageExperience" value="Yes" required><label for="Yes">Yes</label>
+            <div>
+                <input type="radio" name="powerOutageExperience" value="Yes" required><label for="Yes">Yes</label>
             </div>
             <div><input type="radio" name="powerOutageExperience" value="No"><label for="No">No</label></div>
         </div>
 
         <label>3. If yes, how long did the power outage last?</label>
         <div class="rating-options">
-            <div><input type="radio" name="powerOutageDuration" value="Less than 1 hour" required><label
-                    for="Less than 1 hour">Less than 1 hour</label></div>
-            <div><input type="radio" name="powerOutageDuration" value="1-2 hours"><label for="1-2 hours">1-2
-                    hours</label></div>
-            <div><input type="radio" name="powerOutageDuration" value="2-4 hours"><label for="2-4 hours">2-4
-                    hours</label></div>
-            <div><input type="radio" name="powerOutageDuration" value="More than 4 hours"><label
-                    for="More than 4 hours">More than 4 hours</label></div>
+            <div><input type="radio" name="powerOutageDuration" value="Less than 1 hour" required><label for="Less than 1 hour">Less than 1 hour</label></div>
+            <div><input type="radio" name="powerOutageDuration" value="1-2 hours"><label for="1-2 hours">1-2 hours</label></div>
+            <div><input type="radio" name="powerOutageDuration" value="2-4 hours"><label for="2-4 hours">2-4 hours</label></div>
+            <div><input type="radio" name="powerOutageDuration" value="More than 4 hours"><label for="More than 4 hours">More than 4 hours</label></div>
         </div>
 
         <hr>
@@ -315,15 +312,13 @@ input[type="submit"]:hover {
             <div><input type="radio" name="amenities" value="Pool"><label for="Pool">Pool</label></div>
             <div><input type="radio" name="amenities" value="Clubhouse"><label for="Clubhouse">Clubhouse</label></div>
             <div><input type="radio" name="amenities" value="Parking"><label for="Parking">Parking</label></div>
-            <div><input type="radio" name="amenities" value="Other"><label for="Other">Other (please specify)</label>
-            </div>
+            <div><input type="radio" name="amenities" value="Other"><label for="Other">Other (please specify)</label></div>
             <input type="text" name="otherAmenities" placeholder="Please specify if other">
         </div>
 
         <label>2. Are the amenities well-maintained?</label>
         <div class="rating-options">
-            <div><input type="radio" name="amenitiesWellMaintained" value="Yes" required><label for="Yes">Yes</label>
-            </div>
+            <div><input type="radio" name="amenitiesWellMaintained" value="Yes" required><label for="Yes">Yes</label></div>
             <div><input type="radio" name="amenitiesWellMaintained" value="No"><label for="No">No</label></div>
         </div>
 
@@ -336,19 +331,16 @@ input[type="submit"]:hover {
         <h2>Cleanliness</h2>
         <label>1. How would you rate the cleanliness of the common areas in your flat?</label>
         <div class="rating-options">
-            <div><input type="radio" name="cleanlinessRating" value="Excellent" required><label
-                    for="Excellent">Excellent</label></div>
+            <div><input type="radio" name="cleanlinessRating" value="Excellent" required><label for="Excellent">Excellent</label></div>
             <div><input type="radio" name="cleanlinessRating" value="Good"><label for="Good">Good</label></div>
             <div><input type="radio" name="cleanlinessRating" value="Fair"><label for="Fair">Fair</label></div>
             <div><input type="radio" name="cleanlinessRating" value="Poor"><label for="Poor">Poor</label></div>
-            <div><input type="radio" name="cleanlinessRating" value="Very Poor"><label for="Very Poor">Very Poor</label>
-            </div>
+            <div><input type="radio" name="cleanlinessRating" value="Very Poor"><label for="Very Poor">Very Poor</label></div>
         </div>
 
         <label>2. Are the trash chutes and recycling facilities clean and well-maintained?</label>
         <div class="rating-options">
-            <div><input type="radio" name="facilitiesWellMaintained" value="Yes" required><label for="Yes">Yes</label>
-            </div>
+            <div><input type="radio" name="facilitiesWellMaintained" value="Yes" required><label for="Yes">Yes</label></div>
             <div><input type="radio" name="facilitiesWellMaintained" value="No"><label for="No">No</label></div>
         </div>
 
@@ -364,16 +356,14 @@ input[type="submit"]:hover {
             </div>
             <div><input type="radio" name="staffBehaviour" value="Unfriendly"><label for="Unfriendly">Unfriendly</label>
             </div>
-            <div><input type="radio" name="staffBehaviour" value="Unresponsive"><label
-                    for="Unresponsive">Unresponsive</label></div>
+            <div><input type="radio" name="staffBehaviour" value="Unresponsive"><labelfor="Unresponsive">Unresponsive</label></div>
         </div>
 
         <hr>
 
         <!-- Additional Comments and Suggestions -->
         <label for="recommendationComments">Comments:</label>
-        <textarea id="recommendationComments" name="recommendationComments"
-            placeholder="Enter your comments or suggestions" rows="6"></textarea>
+        <textarea id="recommendationComments" name="recommendationComments" placeholder="Enter your comments or suggestions" rows="6"></textarea>
 
         <div class="submit-section">
             <input type="submit" value="Submit Feedback">
